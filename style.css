@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+/* CSS Variables */
+:root {
+  --hero-footer-bg-color: #1f2937;
+  --hero-main-text-font-size: 48px;
+  --hero-main-text-font-weight: 800;
+  --hero-main-text-color: #f9faf8;
+  --hero-secondary-text-font-size: 18px;
+  --hero-secondary-text-color: #e5e7eb;
+  --header-logo-font-size: 24px;
+  --header-logo-color: #f9faf8;
+  --button-color-CTA-bg-color: #3882f6;
+  --info-header-text-font-size: 36px;
+  --info-header-text-font-weight: 800;
+  --info-header-text-color: #1f2937;
+  --quote-section-bg-color: #e5e7eb;
+  --quote-text-font-size: 36px;
+  --quote-text-font-weight: 300;
+  --quote-text-font-style: "italic";
+  --quota-text-color: #1f2937;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background: var(--hero-footer-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.logo {
+  color: var(--header-logo-color);
+  font-size: var(--header-logo-font-size);
+}
+
+.header-links {
+  color: var(--hero-secondary-text-color);
+  font-size: var(--hero-secondary-text-font-size);
+  font-size: 18px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-link {
+  padding: 0 1rem;
+}
