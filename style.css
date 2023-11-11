@@ -114,15 +114,6 @@ button {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /*
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  */
-}
-
-.hero-right p {
-  /* padding: 1rem 10rem; */
 }
 
 /* Info */
