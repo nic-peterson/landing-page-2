@@ -7,6 +7,7 @@
   --hero-main-text-color: #f9faf8;
   --hero-secondary-text-font-size: 18px;
   --hero-secondary-text-color: #e5e7eb;
+  --hero-box-bg-color: #6d747d;
   --header-logo-font-size: 24px;
   --header-logo-color: #f9faf8;
   --button-color-CTA-bg-color: #3882f6;
@@ -19,6 +20,7 @@
   --quote-text-font-style: "italic";
   --quota-text-color: #1f2937;
 }
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +30,8 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/* Nav Bar */
 
 nav {
   background: var(--hero-footer-bg-color);
@@ -48,9 +52,81 @@ nav {
   font-size: 18px;
   list-style-type: none;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
 }
 
+/*
 .header-link {
-  padding: 0 1rem;
+  
+  border-style: solid;
+  border-color: red;
+  
 }
+*/
+
+/* Hero */
+.hero {
+  padding: 1rem 1.5rem;
+  background-color: var(--hero-footer-bg-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-sections {
+  border-style: solid;
+  border-color: red;
+}
+
+/* Hero - Left Side */
+.hero-left {
+  flex: 1;
+}
+
+.hero-left p,
+button {
+  margin-top: 0.25rem;
+}
+.hero-main-text {
+  color: var(--hero-main-text-color);
+  font-size: var(--hero-main-text-font-size);
+}
+
+.hero-secondary-text {
+  color: var(--hero-secondary-text-color);
+  font-size: var(--hero-secondary-text-font-size);
+}
+
+.hero button {
+  background-color: var(--button-color-CTA-bg-color);
+  color: #f9faf8;
+  border-radius: 5px;
+  padding: 0.25rem 1.25rem;
+  border: none;
+}
+
+/* Hero - Right Side */
+.hero-right {
+  flex: 1;
+  color: var(--hero-secondary-text-color);
+  background-color: var(--hero-box-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /*
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  */
+}
+
+.hero-right p {
+  /* padding: 1rem 10rem; */
+}
+
+/* Info */
+
+/* Qoute */
+
+/* CTA */
