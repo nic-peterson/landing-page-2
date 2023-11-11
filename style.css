@@ -74,11 +74,6 @@ nav {
   justify-content: space-between;
 }
 
-.hero-sections {
-  border-style: solid;
-  border-color: red;
-}
-
 /* Hero - Left Side */
 .hero-left {
   flex: 1;
@@ -180,7 +175,7 @@ button {
 .cta-box {
   padding: 2rem 0;
   border-radius: 0.75rem;
-  margin: 2rem;
+  margin: 2remgit;
   background-color: var(--button-color-CTA-bg-color);
   display: flex;
   justify-content: space-around;
