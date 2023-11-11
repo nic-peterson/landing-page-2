@@ -18,7 +18,8 @@
   --quote-text-font-size: 36px;
   --quote-text-font-weight: 300;
   --quote-text-font-style: "italic";
-  --quota-text-color: #1f2937;
+  --quote-text-color: #1f2937;
+  --info-item-text-color: #babec2;
 }
 /* General */
 * {
@@ -28,7 +29,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
 }
 
 /* Nav Bar */
@@ -87,6 +88,7 @@ nav {
 button {
   margin-top: 0.25rem;
 }
+
 .hero-main-text {
   color: var(--hero-main-text-color);
   font-size: var(--hero-main-text-font-size);
@@ -117,7 +119,100 @@ button {
 }
 
 /* Info */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.info-header {
+  font-size: var(--info-header-text-font-size);
+  font-weight: var(--info-header-text-font-weight);
+  color: var(--info-header-text-color);
+  margin: 2rem 0;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.info ul {
+  list-style-type: none;
+}
+
+.item {
+  text-align: center;
+}
+
+.item-img {
+  border-style: solid;
+  border-color: var(--button-color-CTA-bg-color);
+  border-radius: 0.5rem;
+  height: 10rem;
+}
+
+.item-txt {
+  color: var(--info-item-text-color);
+}
 
 /* Qoute */
+.quote {
+  padding: 4rem 1.5rem;
+  background-color: var(--quote-section-bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.client-quote {
+  font-weight: 100;
+  font-style: italic;
+  align-self: center;
+}
+
+.client-name {
+  align-self: flex-end;
+}
 
 /* CTA */
+.cta-box {
+  padding: 2rem 0;
+  border-radius: 0.75rem;
+  margin: 2rem;
+  background-color: var(--button-color-CTA-bg-color);
+  display: flex;
+  justify-content: space-around;
+}
+
+.cta-box-l {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary {
+  color: var(--hero-main-text-color);
+  font-size: var(--header-logo-font-size);
+}
+
+.secondary {
+  color: var(--hero-secondary-text-color);
+}
+
+.cta-btn {
+  color: #f9faf8;
+  background-color: var(--button-color-CTA-bg-color);
+  border-style: solid;
+  border-color: #f9faf8;
+  border-radius: 5px;
+  padding: 0.25rem 1.25rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--hero-footer-bg-color);
+  color: #cacbce;
+  text-align: center;
+  padding: 2rem;
+}
